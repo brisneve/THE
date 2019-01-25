@@ -1,0 +1,20 @@
+---
+title: "THE: R package for Thermal History Exploration"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+This package contains functions that retrieve, summarise, and visualise thermal stress metrics for coral reefs. 
+
+## Installation
+
+To install: 
+
+require(devtools)
+
+devtools:: install_github("brisneve/THE")

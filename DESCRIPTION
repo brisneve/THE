@@ -1,0 +1,10 @@
+Package: THE
+Type: Package
+Title: Thermal History Exploration
+Version: 0.1.0
+Author: Brisneve Edullantes
+Maintainer: Brisneve Edullantes <bedullantes@up.edu.ph>
+Description: This package offers a suite of functions that retrieve, summarise, and visualise the thermal stress metrics.
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
