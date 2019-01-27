@@ -1,6 +1,8 @@
-if(!require(tidyverse)){install.packages("tidyverse"); library(tidyverse)}
 
 get.crw <- function(url,destfile = NULL){
+
+  if(!require(tidyverse)){install.packages("tidyverse"); library(tidyverse)}
+
   df1 <- read.table(url, skip=21, header = TRUE)
   df1$date <- as.Date(with(df1, paste0(YYYY,"-",MM,"-",DD)))
   df2 <- dplyr:: select(df1, date,

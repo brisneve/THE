@@ -1,5 +1,5 @@
-\name{compute.tsm}
-\alias{compute.tsm}
+\name{compute.the}
+\alias{compute.the}
 \title{
 Thermal Stress Metrics
 }
@@ -7,7 +7,7 @@ Thermal Stress Metrics
 This function calculates thermal stress metrics for coral bleaching.
 }
 \usage{
-compute.tsm(x, y)
+compute.the(x, y)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -17,33 +17,17 @@ date of observation (class: date, format: YYYY-MM-DD)
   \item{y}{
 estimate of observation (class: numeric)
 }
+  \item{z}{
+interval of climatology; either week or month; default is week
+}
 }
 
 \value{
 This returns to a data frame of
-  \item{month }{a numeric vector of Month}
   \item{date }{date of observations, format YYYY-MM-DD}
   \item{SST }{Sea surface temperature in deg C}
-  \item{monthly_mean }{Long-term monthly mean SST in deg C}
-  \item{max_climatology}{Annual maximum climatology in deg C}
-  \item{min_climatology}{Annual minimum climatology in deg C}
-  \item{mean_climatology}{Annual mean climatology in deg C}
+  \item{climatology }{Long-term monthly mean SST in deg C}
   \item{SSTA}{Sea surface temperature Anomaly in deg C}
   \item{TSA}{Thermal stress anomaly in deg C}
   \item{DHW}{Degree heating weeks in deg C - weeks}
-}
-\references{
-%% ~put references to the literature/web site here ~
-}
-\author{
-%%  ~~who you are~~
-}
-\note{
-%%  ~~further notes~~
-}
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
-
-\seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
 }
