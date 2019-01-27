@@ -1,5 +1,6 @@
 plot.crw <- function(url, start = NULL, end = NULL, destfile = NULL, width = 8, height = 4){
   if(!require(tidyverse)){install.packages("tidyverse"); library(tidyverse)}
+  if(!require(lubridate)){install.packages("lubridate"); library(lubridate)}
   if(!require(ggplot2)){install.packages("ggplot2"); library(ggplot2)}
   if(!require(ggthemes)){install.packages("ggthemes"); library(ggthemes)}
 
