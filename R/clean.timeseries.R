@@ -15,6 +15,6 @@ clean.timeseries <- function(x,y, start_date, end_date, by = "week"){
   ts.df2 <- ts.df1 %>%
     group_by(date) %>%
     summarise(estimate = mean(estimate))
-  ts.df2$estimate <- na.interpolation(ts.df2$estimate)
+  ts.df2$estimate <-   ifelse(unique(is.na(ts.df2$estimate)) == FALSE, ts.df2$estimate, na.interpolation(ts.df2$estimate))
   ts.df2
 }
