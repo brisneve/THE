@@ -1,5 +1,5 @@
-\name{extract.cordat}
-\alias{extract.cordat}
+\name{extract.timeseries.cordat}
+\alias{extract.timeseries.cordat}
 \title{
 Extraction of variable from CoRDAT .nc files
 }

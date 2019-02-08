@@ -1,4 +1,4 @@
-extract.cordat <- function(nc, varname, coor, fun = mean, method = "bilinear", buffer = 5000){
+extract.timeseries.cordat <- function(nc, varname, coor, fun = mean, method = "bilinear", buffer = 5000){
   nc.brick <- brick(nc, varname = varname)
   x <- raster:: extract(nc.brick,coor, method = method, buffer = buffer, fun = fun)
   x <- dplyr:: add_rownames(as.data.frame(t(x)))
