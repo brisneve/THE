@@ -18,7 +18,7 @@ destination of the .nc files
 name of the variable to be extraction from .nc files
 }
   \item{coor}{
-list of mid longitude and latitude
+vector/matrix of mid longitude and latitude
 }
   \item{method}{
 See the argument method in extract function
